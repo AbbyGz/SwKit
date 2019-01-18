@@ -3,3 +3,7 @@ main: Loader/SwKits
 author: DarkByx & Abby
 version: 1.0.0
 api: 3.3.0
+commands:
+  swkit:
+    description: kit commands
+    
