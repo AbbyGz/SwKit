@@ -19,6 +19,17 @@ class SwKits extends PluginBase implements Listener {
 	}
 
 	public function onCommand(CommandSender $player, Command $command, $label, array $cmd) : bool {
+		if (!$player instanceof Player) {
+			$player->sendMessage(TextFormat::RED.TextFormat::ITALIC."No tienes permiso para usar kits");
+			return false;
+		}
+		$this->giveKit($player);
+		return true;
+	}
+
+	private function giveKit(Player $player) {
+		# agrega el kit aqui
+		$player->sendMessage(TextFormat::GREEN.TextFormat::ITALIC."Recibiste el kit!");
 	}
 
 }
