@@ -1,0 +1,5 @@
+name: SwKits
+main: Loader/SwKits
+author: DarkByx & Abby
+version: 1.0.0
+api: 3.3.0
